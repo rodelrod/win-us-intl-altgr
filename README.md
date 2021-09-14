@@ -1,5 +1,6 @@
 # United States (International) with AltGr dead keys
-## Introduction
+
+## Introduction (thomasfaingnaert)
 Windows includes a keyboard layout called "United States (International)", which allows typing many special characters easily.
 The layout defines several keys as "dead keys", such as the apostrophe (`'`) and double quotes (`"`).
 This means that to enter a single `'`, you have to press `'` followed by a space.
@@ -14,8 +15,14 @@ All five dead keys (`` ` ``, `~`, `^`, `'` and `"`) are now only dead when AltGr
 Note that the original layout already defines several AltGr combinations, e.g. `AltGr+'` becomes `´`.
 If you want to type these characters in the modified layout, you should follow the old keycombination with a space: e.g. `AltGr+' <SPACE>` will produce `´`.
 
+## Modifications by rodelrod
+- The `^` and `~` deadkeys are a bit hard to the access in the original layout. This fork keeps those mappings but in addition remaps `AltGr+\` to dead `~` and `AltGr+Shift+\` to dead `^`.
+- `ç` and `Ç` are remapped under `AltGr+c` and `AltGr+Shift+c`, while preserving the original mappings under `,`.
+- Added mappings for the arrow symbols `←↓↑→` under `AltGr+hjkl`.
+- The built release remaps `CapsLock` to `Left Control`.
+
 ## How to Build or Install
-You can download the latest installer from the releases tab of this repo (https://github.com/thomasfaingnaert/win-us-intl-altgr/releases).
+You can download the latest installer from the releases tab of this repo (https://github.com/rodelrod/win-us-intl-altgr/releases).
 
 If you prefer to build from source, you can open the .KLC source file in Microsoft Keyboard Layout Creator.
 After opening the file, choose Project > Build DLL and Setup Package in the menu to create an installer.
